@@ -22,40 +22,42 @@ class FacebookApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // ignore: prefer_const_constructors
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          "facebook",
-          style: TextStyle(
-            color: Colors.blue,
-            fontWeight: FontWeight.bold,
-            fontSize: 30,
+        appBar: AppBar(
+          title: const Text(
+            "facebook",
+            style: TextStyle(
+              color: Colors.blue,
+              fontWeight: FontWeight.bold,
+              fontSize: 30,
+            ),
           ),
+          centerTitle: true,
+          leading: IconButton(
+            icon: const Icon(Icons.menu),
+            onPressed: () {},
+            color: Colors.blue,
+            iconSize: 30,
+          ),
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.search),
+              onPressed: () {},
+              iconSize: 30,
+              color: Colors.blue,
+            ),
+            IconButton(
+              icon: const Icon(Icons.messenger_rounded),
+              onPressed: () {},
+              iconSize: 30,
+              color: Colors.red,
+            ),
+          ],
+          backgroundColor: Colors.white,
+          elevation: 5,
         ),
-        centerTitle: true,
-        leading: IconButton(
-          icon: const Icon(Icons.menu),
+        floatingActionButton: FloatingActionButton(
           onPressed: () {},
-          color: Colors.blue,
-          iconSize: 30,
-        ),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.search),
-            onPressed: () {},
-            iconSize: 30,
-            color: Colors.blue,
-          ),
-          IconButton(
-            icon: const Icon(Icons.messenger_rounded),
-            onPressed: () {},
-            iconSize: 30,
-            color: Colors.blue,
-          ),
-        ],
-        backgroundColor: Colors.white,
-        elevation: 5,
-      ),
-    );
+          child: Icon(Icons.add),
+        ));
   }
 }
-
