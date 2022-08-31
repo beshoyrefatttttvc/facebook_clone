@@ -49,10 +49,10 @@ class FacebookApp extends StatelessWidget {
               icon: const Icon(Icons.messenger_rounded),
               onPressed: () {},
               iconSize: 30,
-              color: Colors.red,
+              color: Colors.blue,
             ),
           ],
-          backgroundColor: Colors.black12,
+          backgroundColor: Colors.white,
           elevation: 5,
         ),
         floatingActionButton: FloatingActionButton(
