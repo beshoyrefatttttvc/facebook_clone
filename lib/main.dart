@@ -52,7 +52,7 @@ class FacebookApp extends StatelessWidget {
               color: Colors.red,
             ),
           ],
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.black12,
           elevation: 5,
         ),
         floatingActionButton: FloatingActionButton(
